@@ -21,11 +21,14 @@ metaForm.addEventListener('submit', async (e) => {
   const data = await res.json()
 
   console.log(data)
-  console.log(data.description.content)
+  // console.log(data.description.content)
+  console.log(data.description)
 
-  description.textContent = data.description.content
-  tags.textContent = data.tags.content
+  // description.textContent = data.description.content
+  // tags.textContent = data.tags.content
 
+  description.textContent = data.description
+  tags.textContent = data.tags
   return data
 }) 
 
